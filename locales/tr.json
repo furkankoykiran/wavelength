@@ -1,0 +1,21 @@
+{
+    "title": "Wavelength",
+    "subtitle": "Zihin okuma parti oyunu",
+    "teamCount": "Takım Sayısı",
+    "teamName": "Takım",
+    "oneTeam": "Bireysel",
+    "start": "Oyunu Başlat",
+    "hideTarget": "Hedefi Gizle",
+    "revealTarget": "Hedefi Göster",
+    "nextRound": "Sonraki Tur",
+    "newGame": "Yeni Oyun",
+    "score": "Puan",
+    "points": "Puan",
+    "settings": "Ayarlar",
+    "language": "Dil",
+    "theme": "Tema",
+    "instructions": "İğneyi hareket ettirerek spektrumda hedefin nerede olduğunu tahmin edin.",
+    "howToPlay": "Nasıl Oynanır",
+    "howToPlayText": "1. Bir oyuncuya iki zıt kavram verilir.\n2. Oyuncu, spektrumda hedefin nerede olduğunu düşünmelidir.\n3. Diğer oyuncular iğneyi hareket ettirerek hedefin yerini tahmin etmeye çalışır.\n4. Puan, tahminin hedefe yakınlığına göre verilir."
+  }
+  

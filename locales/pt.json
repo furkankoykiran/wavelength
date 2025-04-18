@@ -1,0 +1,20 @@
+{
+  "title": "Wavelength",
+  "subtitle": "O jogo de festa de leitura mental",
+  "teamCount": "Número de Equipes",
+  "teamName": "Equipe",
+  "oneTeam": "Individual",
+  "start": "Iniciar Jogo",
+  "hideTarget": "Esconder Alvo",
+  "revealTarget": "Revelar Alvo",
+  "nextRound": "Próxima Rodada",
+  "newGame": "Novo Jogo",
+  "score": "Pontuação",
+  "points": "Pontos",
+  "settings": "Configurações",
+  "language": "Idioma",
+  "theme": "Tema",
+  "instructions": "Mova a agulha para adivinhar onde no espectro está o alvo.",
+  "howToPlay": "Como Jogar",
+  "howToPlayText": "1. Um jogador recebe dois conceitos opostos.\n2. O jogador precisa pensar onde no espectro o alvo está localizado.\n3. Outros jogadores tentam adivinhar a localização do alvo movendo a agulha.\n4. Pontos são concedidos com base na proximidade do palpite ao alvo."
+} 
