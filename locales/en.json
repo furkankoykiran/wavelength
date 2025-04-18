@@ -1,0 +1,21 @@
+{
+    "title": "Wavelength",
+    "subtitle": "The mind-reading party game",
+    "teamCount": "Number of Teams",
+    "teamName": "Team",
+    "oneTeam": "Individual",
+    "start": "Start Game",
+    "hideTarget": "Hide Target",
+    "revealTarget": "Reveal Target",
+    "nextRound": "Next Round",
+    "newGame": "New Game",
+    "score": "Score",
+    "points": "Points",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "instructions": "Move the needle to guess where on the spectrum the target is.",
+    "howToPlay": "How to Play",
+    "howToPlayText": "1. A player is given two opposite concepts.\n2. The player needs to think where on the spectrum the target is located.\n3. Other players try to guess the target location by moving the needle.\n4. Points are awarded based on how close the guess is to the target."
+  }
+  

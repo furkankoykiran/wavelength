@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="title">Wavelength</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="description" content="Wavelength - The mind-reading party game">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="images/logo.png">
+</head>
+<body>
+  <!-- Header & Nav -->
+  <header class="top-bar">
+    <div class="logo">
+     <img src="images/logo.png" alt="Wavelength Logo" class="logo-img" width="40" height="40">
+      <h1 data-i18n="title">Wavelength</h1>
+      <p data-i18n="subtitle" class="subtitle">The mind-reading party game</p>
+    </div>
+    <div class="controls">
+      <div class="dropdown">
+        <button class="dropbtn"><span data-i18n="settings">Settings</span> ⚙️</button>
+        <div class="dropdown-content">
+          <div class="setting-item">
+            <label data-i18n="theme">Theme</label>
+            <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle Theme">🌙</button>
+          </div>
+          <div class="setting-item">
+            <label data-i18n="language">Language</label>
+            <select id="langSelect" class="lang-select">
+              <option value="en">English</option>
+              <option value="tr">Türkçe</option>
+              <option value="es">Español</option>
+              <option value="zh">中文</option>
+              <option value="hi">हिन्दी</option>
+              <option value="pt">Português</option>
+              <option value="bn">বাংলা</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+              <option value="vi">Tiếng Việt</option>
+            </select>
+          </div>
+          <button id="helpBtn" class="full-btn"><span data-i18n="howToPlay">How To Play</span> ❓</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="app">
+    <!-- 1) Kurulum Ekranı -->
+    <section id="setup" class="card">
+      <h2 class="section-title" data-i18n="title">Wavelength</h2>
+      <p class="instructions" data-i18n="instructions">Move the needle to guess where on the spectrum the target is.</p>
+      
+      <div class="form-group">
+        <label for="teamCount" data-i18n="teamCount">Number of Teams</label>
+        <input type="number" id="teamCount" min="1" max="8" value="2"/>
+      </div>
+      <div id="teamNames" class="form-group"></div>
+      <button id="startBtn" class="btn primary" data-i18n="start">Start Game</button>
+    </section>
+
+    <!-- 2) Oyun Ekranı -->
+    <section id="game" class="card" hidden>
+      <div id="scoreboard" class="scoreboard"></div>
+
+      <div class="board-container">
+        <div class="board">
+          <div id="targetArea" class="target-area"></div>
+          <div id="needleContainer" class="needle-container">
+            <div id="needle" class="needle"></div>
+          </div>
+        </div>
+        <div class="clues">
+          <span id="leftClue" class="clue"></span>
+          <span class="arrow">⟶</span>
+          <span id="rightClue" class="clue"></span>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <button id="toggleBtn" class="btn secondary" data-i18n="hideTarget">Hide Target</button>
+        <button id="nextBtn" class="btn secondary" data-i18n="nextRound">Next Round</button>
+        <button id="newGameBtn" class="btn danger" data-i18n="newGame">New Game</button>
+      </div>
+
+      <div id="scoreDisplay" class="score-display"></div>
+    </section>
+
+    <!-- 3) How to Play Modal -->
+    <div id="howToPlayModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 data-i18n="howToPlay">How To Play</h2>
+        <p data-i18n="howToPlayText">1. A player is given two opposite concepts.
+2. The player needs to think where on the spectrum the target is located.
+3. Other players try to guess the target location by moving the needle.
+4. Points are awarded based on how close the guess is to the target.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <a href="https://github.com/furkankoykiran/wavelength" target="_blank">GitHub</a>
+      <span>|</span>
+      <span>© 2025 <a href="https://furkankoykiran.com.tr" target="_blank">Furkan Köykıran</a></span>
+    </div>
+  </footer>
+
+  <script src="js/clues.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "title": "Wavelength",
+  "subtitle": "Trò chơi tiệc đọc tâm trí",
+  "teamCount": "Số đội",
+  "teamName": "Đội",
+  "oneTeam": "Cá nhân",
+  "start": "Bắt đầu",
+  "hideTarget": "Ẩn mục tiêu",
+  "revealTarget": "Hiện mục tiêu",
+  "nextRound": "Vòng tiếp theo",
+  "newGame": "Trò chơi mới",
+  "score": "Điểm số",
+  "points": "Điểm",
+  "settings": "Cài đặt",
+  "language": "Ngôn ngữ",
+  "theme": "Chủ đề",
+  "instructions": "Di chuyển kim để đoán vị trí mục tiêu trên phổ.",
+  "howToPlay": "Cách chơi",
+  "howToPlayText": "1. Một người chơi được cung cấp hai khái niệm đối lập.\n2. Người chơi cần suy nghĩ về vị trí của mục tiêu trên phổ.\n3. Những người chơi khác cố gắng đoán vị trí mục tiêu bằng cách di chuyển kim.\n4. Điểm được tính dựa trên độ gần của dự đoán với mục tiêu."
+} 

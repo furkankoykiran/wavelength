@@ -1,0 +1,20 @@
+{
+  "title": "Wavelength",
+  "subtitle": "读心派对游戏",
+  "teamCount": "队伍数量",
+  "teamName": "队伍",
+  "oneTeam": "个人",
+  "start": "开始游戏",
+  "hideTarget": "隐藏目标",
+  "revealTarget": "显示目标",
+  "nextRound": "下一轮",
+  "newGame": "新游戏",
+  "score": "得分",
+  "points": "分",
+  "settings": "设置",
+  "language": "语言",
+  "theme": "主题",
+  "instructions": "移动指针来猜测目标在光谱上的位置。",
+  "howToPlay": "如何游戏",
+  "howToPlayText": "1. 一位玩家会得到两个相反的概念。\n2. 该玩家需要思考目标在光谱上的位置。\n3. 其他玩家通过移动指针来猜测目标位置。\n4. 根据猜测与目标的接近程度获得分数。"
+} 
