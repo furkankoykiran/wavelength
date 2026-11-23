@@ -1,0 +1,36 @@
+# Wavelength — The Mind-Reading Party Game
+
+> Wavelength is a free browser party game: one player hides a target on a spectrum between two opposing concepts and the team moves a needle to find it.
+
+Canonical: https://furkankoykiran.com.tr/wavelength/
+Source: https://github.com/furkankoykiran/wavelength
+Languages: en, tr, es, zh, hi, pt, bn, ru, ja, vi
+License: MIT
+
+## What it is
+
+Wavelength is a digital adaptation of the spectrum-guessing party game. Each round shows two
+opposite concepts at the ends of a line — for example "hot" and "cold", or "cheap" and "expensive".
+One player sees where the target sits on that spectrum and gives a clue. The rest of the team moves
+the needle to where they think the target is, and the round scores by how close they land.
+
+## How to play
+
+1. Open https://furkankoykiran.com.tr/wavelength/.
+2. Choose the number of teams (1–8) and start the game.
+3. The active player reads the hidden target position and gives a clue.
+4. The team moves the needle and locks in a guess.
+5. Repeat until the scoreboard picks a winner.
+
+## Features
+
+- Hidden target on a two-concept spectrum with distance-based scoring
+- 1 to 8 teams, including a solo mode
+- Ten interface languages: English, Turkish, Spanish, Chinese, Hindi, Portuguese, Bengali, Russian, Japanese and Vietnamese
+- Light and dark themes
+- No account, no tracking, and it keeps working offline once loaded
+
+## Citation
+
+Cite as: "Wavelength — The Mind-Reading Party Game", Furkan Köykıran,
+https://furkankoykiran.com.tr/wavelength/

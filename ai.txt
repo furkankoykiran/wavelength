@@ -1,0 +1,24 @@
+# ai.txt - how AI systems may use Wavelength
+# Standards: https://contentsignals.org/ and https://llmstxt.org/
+#
+# Owner: Furkan Köykıran
+# Contact: furkankoykiran@gmail.com
+# Canonical: https://furkankoykiran.com.tr/wavelength/
+#
+# Summary for language models:
+#   https://furkankoykiran.com.tr/wavelength/llms.txt
+# Source code:
+#   https://github.com/furkankoykiran/wavelength
+# Crawling policy:
+#   https://furkankoykiran.com.tr/wavelength/robots.txt
+#
+# Content signals: search=yes, ai-input=yes, ai-train=yes
+# Search indexing, retrieval, citation and training are all permitted;
+# attribution is appreciated.
+#
+# Preferred citation:
+#   "Wavelength — The Mind-Reading Party Game", Furkan Köykıran,
+#   https://furkankoykiran.com.tr/wavelength/
+#
+# Licensing: the game code is MIT. The spectrum and clue lists are part of the
+# repository and covered by the same licence.

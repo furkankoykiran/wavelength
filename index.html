@@ -3,21 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-i18n="title">Wavelength</title>
+  <title>Wavelength — The Mind-Reading Party Game</title>
+  <meta name="description" content="Play Wavelength in your browser: one player hides a target on a spectrum between two concepts and the team moves the needle to find it. A free party game for 1–8 teams in 10 languages." />
+  <meta name="author" content="Furkan Köykıran" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#22d3ee" />
+  <link rel="canonical" href="https://furkankoykiran.com.tr/wavelength/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css"/>
-  <meta name="description" content="Wavelength - The mind-reading party game">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <meta property="og:image" content="images/logo.png">
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="images/logo-160.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wavelength" />
+  <meta property="og:url" content="https://furkankoykiran.com.tr/wavelength/" />
+  <meta property="og:title" content="Wavelength — The Mind-Reading Party Game" />
+  <meta property="og:description" content="Read your team's mind: place the needle where the hidden target sits on a spectrum between two concepts. Free browser party game, 10 languages." />
+  <meta property="og:image" content="https://furkankoykiran.com.tr/wavelength/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Wavelength spectrum guessing party game" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Wavelength — The Mind-Reading Party Game" />
+  <meta name="twitter:description" content="Read your team's mind: place the needle where the hidden target sits on a spectrum between two concepts." />
+  <meta name="twitter:image" content="https://furkankoykiran.com.tr/wavelength/og-image.png" />
+
+  <link rel="alternate" hreflang="en" href="https://furkankoykiran.com.tr/wavelength/" />
+  <link rel="alternate" hreflang="tr" href="https://furkankoykiran.com.tr/wavelength/" />
+  <link rel="alternate" hreflang="x-default" href="https://furkankoykiran.com.tr/wavelength/" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://furkankoykiran.com.tr/wavelength/#app",
+          "name": "Wavelength",
+          "url": "https://furkankoykiran.com.tr/wavelength/",
+          "description": "A free browser party game: one player hides a target on a spectrum between two opposing concepts and the team moves a needle to find it.",
+          "applicationCategory": "GameApplication",
+          "operatingSystem": "Any",
+          "browserRequirements": "Requires JavaScript",
+          "isAccessibleForFree": true,
+          "inLanguage": ["en", "tr", "es", "zh", "hi", "pt", "bn", "ru", "ja", "vi"],
+          "codeRepository": "https://github.com/furkankoykiran/wavelength",
+          "license": "https://opensource.org/licenses/MIT",
+          "author": {
+            "@type": "Person",
+            "name": "Furkan Köykıran",
+            "url": "https://furkankoykiran.com.tr/"
+          },
+          "featureList": [
+            "Hidden target on a two-concept spectrum",
+            "1 to 8 teams with automatic scoring",
+            "Ten interface languages",
+            "Light and dark themes",
+            "Works offline once loaded"
+          ]
+        },
+        {
+          "@type": "Game",
+          "@id": "https://furkankoykiran.com.tr/wavelength/#game",
+          "name": "Wavelength",
+          "url": "https://furkankoykiran.com.tr/wavelength/",
+          "gameLocation": "https://furkankoykiran.com.tr/wavelength/",
+          "numberOfPlayers": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 8
+          },
+          "genre": ["Party game", "Guessing game", "Social deduction game"],
+          "inLanguage": ["en", "tr", "es", "zh", "hi", "pt", "bn", "ru", "ja", "vi"]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <!-- Header & Nav -->
   <header class="top-bar">
     <div class="logo">
-     <img src="images/logo.png" alt="Wavelength Logo" class="logo-img" width="40" height="40">
+     <img src="images/logo-160.png" alt="Wavelength logo" class="logo-img" width="40" height="40">
       <h1 data-i18n="title">Wavelength</h1>
       <p data-i18n="subtitle" class="subtitle">The mind-reading party game</p>
     </div>
@@ -88,14 +167,14 @@
         <button id="newGameBtn" class="btn danger" data-i18n="newGame">New Game</button>
       </div>
 
-      <div id="scoreDisplay" class="score-display"></div>
+      <div id="scoreDisplay" class="score-display" aria-live="polite"></div>
     </section>
 
     <!-- 3) How to Play Modal -->
-    <div id="howToPlayModal" class="modal">
+    <div id="howToPlayModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="howToPlayTitle">
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 data-i18n="howToPlay">How To Play</h2>
+        <span class="close" role="button" tabindex="0" aria-label="Close how-to-play dialog">&times;</span>
+        <h2 id="howToPlayTitle" data-i18n="howToPlay">How To Play</h2>
         <p data-i18n="howToPlayText">1. A player is given two opposite concepts.
 2. The player needs to think where on the spectrum the target is located.
 3. Other players try to guess the target location by moving the needle.
@@ -106,11 +185,19 @@
 
   <footer>
     <div>
-      <a href="https://github.com/furkankoykiran/wavelength" target="_blank">GitHub</a>
+      <a href="https://github.com/furkankoykiran/wavelength" target="_blank" rel="noopener">GitHub</a>
       <span>|</span>
-      <span>© 2025 <a href="https://furkankoykiran.com.tr" target="_blank">Furkan Köykıran</a></span>
+      <span>© 2026 <a href="https://furkankoykiran.com.tr" target="_blank" rel="noopener">Furkan Köykıran</a></span>
     </div>
   </footer>
+
+  <noscript>
+    <p style="max-width:42rem;margin:2rem auto;padding:0 1.5rem;line-height:1.6">
+      Wavelength needs JavaScript to draw the spectrum, move the needle and keep score.
+      The source code is on
+      <a href="https://github.com/furkankoykiran/wavelength">GitHub</a>.
+    </p>
+  </noscript>
 
   <script src="js/clues.js"></script>
   <script src="js/script.js"></script>
