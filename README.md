@@ -1,10 +1,13 @@
-# 🌊 Wavelength
+﻿# 🌊 Wavelength
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/furkankoykiran/wavelength/actions/workflows/ci.yml/badge.svg)](https://github.com/furkankoykiran/wavelength/actions/workflows/ci.yml)
 
 > 🎮 The mind-reading party game in your browser!
 
 ![Wavelength Logo](images/logo.png)
+
+**Play: [furkankoykiran.com.tr/wavelength](https://furkankoykiran.com.tr/wavelength/)**
 
 ## 📖 About
 
@@ -46,7 +49,7 @@ Wavelength currently supports 10 languages:
 
 ### Play Online
 
-Visit [https://furkankoykiran.github.io/wavelength/](https://furkankoykiran.github.io/wavelength/) to play the game directly in your browser.
+Visit [https://furkankoykiran.com.tr/wavelength/](https://furkankoykiran.com.tr/wavelength/) to play the game directly in your browser.
 
 ### Run Locally
 
@@ -71,6 +74,19 @@ No build process or dependencies required! Simply open `index.html` in any moder
 - CSS3
 - Vanilla JavaScript
 - No external libraries or frameworks
+
+## 🔍 SEO, AI discovery and checks
+
+- Descriptive title and description, canonical URL, Open Graph and Twitter cards with a generated 1200×630 `og-image.png`.
+- `WebApplication` + `Game` JSON-LD with author, licence and repository links.
+- `robots.txt`, `sitemap.xml`, `llms.txt`, `ai.txt`, `.well-known/security.txt` and a web manifest in the repository root.
+- `document.documentElement.lang` and `document.title` follow the language picker.
+- `.nojekyll` keeps GitHub Pages from hiding `.well-known/` and other dot paths.
+- `node scripts/verify-site.mjs` (also run by CI) checks the metadata, the discovery files and that every local asset referenced by `index.html` exists.
+
+`robots.txt` is only authoritative at a host root. On
+`furkankoykiran.com.tr/wavelength/` the portfolio's root `robots.txt` wins; the
+file here keeps the repository self-contained for standalone deployments.
 
 ## 🤝 Contributing
 

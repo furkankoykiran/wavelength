@@ -1,0 +1,25 @@
+{
+  "name": "Wavelength — The Mind-Reading Party Game",
+  "short_name": "Wavelength",
+  "description": "A free browser party game: one player hides a target on a spectrum between two concepts and the team moves the needle to find it.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#22d3ee",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "images/logo-160.png",
+      "sizes": "160x160",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -56,6 +56,9 @@
       document.querySelectorAll('[data-i18n]').forEach(el => {
         el.textContent = i18n[el.dataset.i18n] || el.textContent;
       });
+      // Keep the document language and title in sync with the visible interface.
+      htmlEl.lang = lang;
+      document.title = `${i18n.title} — ${i18n.subtitle}`;
       localStorage.setItem('lang', lang);
     }
     langSelect.value = state.lang;
@@ -212,6 +215,20 @@
     
     closeModal.addEventListener('click', () => {
       modal.style.display = 'none';
+    });
+    
+    // The close control is a span with role="button", so support the keyboard too.
+    closeModal.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        modal.style.display = 'none';
+      }
+    });
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.style.display === 'flex') {
+        modal.style.display = 'none';
+      }
     });
     
     window.addEventListener('click', (e) => {
