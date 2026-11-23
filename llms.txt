@@ -28,7 +28,7 @@ the needle to where they think the target is, and the round scores by how close 
 - 1 to 8 teams, including a solo mode
 - Ten interface languages: English, Turkish, Spanish, Chinese, Hindi, Portuguese, Bengali, Russian, Japanese and Vietnamese
 - Light and dark themes
-- No account, no tracking, and it keeps working offline once loaded
+- No account, no tracking and no backend
 
 ## Citation
 
